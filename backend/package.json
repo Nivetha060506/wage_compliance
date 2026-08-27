@@ -1,0 +1,8 @@
+{
+  "name": "compliance-api",
+  "private": true,
+  "type": "module",
+  "scripts": {"dev":"npx tsc -p tsconfig.json && node dist/server.js","dev:backend":"npm run dev","build":"npx tsc -p tsconfig.json","start":"node dist/server.js","test":"npx tsc -p tsconfig.json && node --test dist/intelligence/ComplianceRiskEngine.test.js"},
+  "dependencies": {"bcryptjs":"^2.4.3","cors":"^2.8.5","dotenv":"^16.4.7","express":"^4.21.2","helmet":"^8.0.0","jsonwebtoken":"^9.0.2","mongoose":"^8.9.5","zod":"^3.24.1","express-rate-limit":"^7.5.0"},
+  "devDependencies": {"@types/cors":"^2.8.17","@types/express":"^5.0.0","@types/jsonwebtoken":"^9.0.7","@types/node":"^22.10.5","tsx":"^4.19.2","typescript":"^5.7.2"}
+}

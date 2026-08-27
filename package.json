@@ -1,0 +1,13 @@
+{
+  "name": "tamil-nadu-wage-compliance-portal",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w compliance-api\" \"npm run dev -w compliance-portal-ui\"",
+    "dev:backend": "npm run dev -w compliance-api",
+    "dev:frontend": "npm run dev -w compliance-portal-ui",
+    "build": "npm run build -w compliance-api && npm run build -w compliance-portal-ui",
+    "test": "npm run test -w compliance-api"
+  },
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
